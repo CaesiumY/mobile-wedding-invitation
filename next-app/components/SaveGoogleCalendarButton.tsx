@@ -12,6 +12,10 @@ const SaveGoogleCalendarLink = () => {
     googleCalendarInfo: { date, description, location, time, title },
   } = data;
 
+  if (!date || !time || !title) {
+    return null;
+  }
+
   return (
     <Button
       variant="secondary"
