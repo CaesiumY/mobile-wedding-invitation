@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { hSSanTokki20, suiteRegular } from "./font";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,6 +26,10 @@ export default function RootLayout({
           icons={{
             success: <span>🎉</span>,
           }}
+        />
+        <Script
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=44331b9a13b30e24e651be862f4436dc&libraries=services,clusterer&autoload=false"
+          strategy="beforeInteractive"
         />
       </body>
     </html>

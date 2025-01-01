@@ -3,6 +3,7 @@ import SectionTitle from "../common/SectionTitle";
 import { Map } from "lucide-react";
 import data from "@/data.json";
 import { Button } from "../ui/button";
+import KakaoMap from "../KakaoMap";
 
 const LocationSection = () => {
   const { mapInfo, locationInfo } = data;
@@ -20,14 +21,17 @@ const LocationSection = () => {
       </div>
 
       {/* map */}
+      <div className="w-full space-y-2">
+        <KakaoMap />
 
-      <div className="flex justify-center gap-2">
-        <a href={mapInfo.naverMap} target="_blank" rel="noopener noreferrer">
-          <Button variant="outline">네이버 지도</Button>
-        </a>
-        <a href={mapInfo.kakaoMap} target="_blank" rel="noopener noreferrer">
-          <Button variant="outline">카카오맵</Button>
-        </a>
+        <div className="flex justify-center gap-2">
+          <a href={mapInfo.naverMap} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">네이버 지도</Button>
+          </a>
+          <a href={mapInfo.kakaoMap} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">카카오맵</Button>
+          </a>
+        </div>
       </div>
 
       {/* Address */}
