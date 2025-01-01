@@ -1,4 +1,5 @@
 import BackgroundContainer from "@/components/layout/BackgroundContainer";
+import AccountSection from "@/components/section/AccountSection";
 import GallerySection from "@/components/section/GallerySection";
 import InvitationSection from "@/components/section/InvitationSection";
 import MainSection from "@/components/section/MainSection";
@@ -10,64 +11,11 @@ const HomePage = () => {
       <MainSection />
       <InvitationSection />
       <GallerySection />
+      <AccountSection />
 
       <div className="font-santokki">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
     </BackgroundContainer>
   );
 };

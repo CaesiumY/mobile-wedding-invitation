@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { hSSanTokki20, suiteRegular } from "./font";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,15 @@ export default function RootLayout({
       lang="ko"
       className={`${hSSanTokki20.variable} ${suiteRegular.variable}`}
     >
-      <body className="break-keep antialiased">{children}</body>
+      <body className="break-keep antialiased">
+        {children}
+        <Toaster
+          position="bottom-center"
+          icons={{
+            success: <span>🎉</span>,
+          }}
+        />
+      </body>
     </html>
   );
 }

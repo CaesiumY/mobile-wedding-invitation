@@ -43,8 +43,8 @@
           "relation": "신랑",
           "bank": "카카오뱅크",
           "account": "1234-56-789012",
-          "kakaopayAccount": "",
-          "tossAccount": ""
+          "kakaopayAccount": "123",
+          "tossAccount": "456"
         },
         {
           "name": "장아빠",
