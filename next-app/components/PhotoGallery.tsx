@@ -1,9 +1,9 @@
 "use client";
 
-import { Gallery, Item } from "react-photoswipe-gallery";
-import "photoswipe/style.css";
-import Image from "next/image";
 import { galleryImages } from "@/lib/gallery-images";
+import Image from "next/image";
+import "photoswipe/style.css";
+import { Gallery, Item } from "react-photoswipe-gallery";
 
 const PhotoGallery = () => {
   return (
@@ -23,8 +23,6 @@ const PhotoGallery = () => {
                 className="cursor-pointer object-cover"
                 src={image.source}
                 alt={image.alt}
-                // width={100}
-                // height={150}
                 ref={ref}
                 onClick={open}
               />
