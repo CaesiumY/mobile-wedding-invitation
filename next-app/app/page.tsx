@@ -11,6 +11,56 @@ const HomePage = () => {
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
     </BackgroundContainer>
   );
 };
