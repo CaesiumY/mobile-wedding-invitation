@@ -4,7 +4,11 @@ interface Person {
   parents: { relation: string; isDeceased?: boolean; name: string }[];
 }
 
-function HostInfo({ person }: { person: Person }) {
+interface HostInfoProps {
+  person: Person;
+}
+
+function HostInfo({ person }: HostInfoProps) {
   return (
     <div className="flex items-center justify-center gap-1 whitespace-nowrap px-14">
       {person.parents?.map((parent, index) => (
