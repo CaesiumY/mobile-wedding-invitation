@@ -25,6 +25,7 @@ export default function RootLayout({
           position="bottom-center"
           icons={{
             success: <span>🎉</span>,
+            error: <span>❗</span>,
           }}
         />
         <Script

@@ -2,7 +2,7 @@ import React from "react";
 
 interface SectionTitleProps {
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
 }
 
 const SectionTitle = ({ title, icon }: SectionTitleProps) => {
