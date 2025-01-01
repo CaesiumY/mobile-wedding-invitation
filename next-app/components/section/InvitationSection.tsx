@@ -1,5 +1,6 @@
-import React from "react";
 import data from "@/data.json";
+import { MailOpen } from "lucide-react";
+import SectionTitle from "../common/SectionTitle";
 import HostInfo from "../HostInfo";
 import SaveGoogleCalendarLink from "../SaveGoogleCalendarButton";
 
@@ -10,9 +11,7 @@ export default function InvitationSection() {
 
   return (
     <section className="flex flex-col items-center gap-8">
-      <h2 className="font-santokki m-2 whitespace-pre-line text-2xl text-primary">
-        모시는 글
-      </h2>
+      <SectionTitle title="모시는 글" icon={<MailOpen strokeWidth={3} />} />
 
       <div className="space-y-8">
         <p className="whitespace-pre-line leading-loose">{message}</p>
