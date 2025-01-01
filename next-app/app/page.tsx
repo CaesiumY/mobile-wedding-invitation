@@ -4,7 +4,9 @@ import React from "react";
 const HomePage = () => {
   return (
     <BackgroundContainer>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div className="font-santokki">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
