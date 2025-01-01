@@ -17,7 +17,7 @@ export default function RootLayout({
       lang="ko"
       className={`${hSSanTokki20.variable} ${suiteRegular.variable}`}
     >
-      <body className="antialiased">{children}</body>
+      <body className="break-keep antialiased">{children}</body>
     </html>
   );
 }

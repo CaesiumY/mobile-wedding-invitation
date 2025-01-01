@@ -1,6 +1,7 @@
 import React from "react";
 import data from "@/data.json";
 import HostInfo from "../HostInfo";
+import SaveGoogleCalendarLink from "../SaveGoogleCalendarButton";
 
 export default function InvitationSection() {
   const {
@@ -24,6 +25,8 @@ export default function InvitationSection() {
       <p className="whitespace-pre-line text-center font-extralight">
         {eventDetail}
       </p>
+
+      <SaveGoogleCalendarLink />
     </section>
   );
 }

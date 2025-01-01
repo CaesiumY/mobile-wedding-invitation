@@ -13,7 +13,7 @@ const MainSection = () => {
       <Image
         src={mainImage}
         alt="메인 이미지"
-        className="max-w-[450px] rounded-t-[200px] pt-4"
+        className="w-full max-w-[450px] rounded-t-[200px] pt-4"
         width={396}
         height={614}
       />
