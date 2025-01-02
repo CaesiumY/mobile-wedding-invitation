@@ -8,7 +8,7 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 const PhotoGallery = () => {
   return (
     <Gallery>
-      <div className="grid max-w-[300px] grid-cols-2 gap-1 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-96 grid-cols-2 gap-1 sm:grid-cols-3">
         {galleryImages.map((image, index) => (
           <Item
             key={index}
