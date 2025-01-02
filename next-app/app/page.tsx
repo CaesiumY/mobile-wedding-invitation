@@ -6,7 +6,6 @@ import GuestBookSection from "@/components/section/GuestBookSection";
 import InvitationSection from "@/components/section/InvitationSection";
 import LocationSection from "@/components/section/LocationSection";
 import MainSection from "@/components/section/MainSection";
-import React from "react";
 
 const HomePage = () => {
   return (
