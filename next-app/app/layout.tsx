@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { hSSanTokki20, suiteRegular } from "./font";
 import "./globals.css";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: data.greeting.title,
@@ -21,7 +22,7 @@ export default function RootLayout({
       className={`${hSSanTokki20.variable} ${suiteRegular.variable}`}
     >
       <body className="break-keep antialiased">
-        {children}
+        <Providers>{children}</Providers>
         <Toaster
           position="top-center"
           icons={{
