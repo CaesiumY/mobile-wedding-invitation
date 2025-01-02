@@ -2,7 +2,7 @@
 
 import data from "@/data.json";
 import JSConfetti from "js-confetti";
-import { ChevronUp, Heart, Share } from "lucide-react";
+import { ArrowUp, Heart, Share } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "./ui/button";
 
@@ -34,16 +34,16 @@ const FloatingBar = ({ isVisible }: FloatingBarProps) => {
   if (!isVisible) return null;
 
   return (
-    <nav className="fixed bottom-8 left-0 right-0 z-20 flex min-w-[280px] items-center justify-center gap-1">
+    <nav className="fixed bottom-8 left-0 right-0 z-20 flex flex-row items-center justify-center gap-1">
       <Button onClick={handleCount} variant="outline">
         <Heart className="text-pink-400" />
       </Button>
       <Button onClick={handleShare} variant="outline">
-        <Share className="h-5 w-5 text-pink-400" />
+        <Share className="text-pink-400" />
         <span className="text-sm text-gray-600">공유</span>
       </Button>
       <Button onClick={handleScroll} variant="outline">
-        <ChevronUp className="h-5 w-5 text-pink-400" />
+        <ArrowUp className="text-pink-400" />
         <span className="text-sm text-gray-600">위로</span>
       </Button>
     </nav>
