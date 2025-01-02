@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="break-keep antialiased">
         {children}
         <Toaster
-          position="bottom-center"
+          position="top-center"
           icons={{
             success: <span>🎉</span>,
             error: <span>❗</span>,

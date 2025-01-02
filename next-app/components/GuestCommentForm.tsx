@@ -48,7 +48,7 @@ const GuestCommentForm = () => {
         className="w-full rounded border border-gray-300"
       />
 
-      <Button variant="outline" type="submit" className="w-full rounded">
+      <Button variant="secondary" type="submit" className="w-full rounded">
         <Send />
         축하 메시지 남기기
       </Button>
