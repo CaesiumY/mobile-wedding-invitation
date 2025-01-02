@@ -1,3 +1,4 @@
+import FloatingBar from "@/components/FloatingBar";
 import BackgroundContainer from "@/components/layout/BackgroundContainer";
 import AccountSection from "@/components/section/AccountSection";
 import GallerySection from "@/components/section/GallerySection";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <AccountSection />
       <LocationSection />
       <GuestBookSection />
+      <FloatingBar isVisible />
     </BackgroundContainer>
   );
 };
