@@ -24,7 +24,6 @@ const GuestCommentForm = () => {
       return toast.error("메시지를 입력해주세요.");
     }
 
-    console.log(name, message);
     // TODO: 파이어베이스에 메시지 저장
 
     toast.success("메시지를 보냈습니다. 💌");
