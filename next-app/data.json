@@ -1,61 +1,55 @@
 {
   "greeting": {
-    "title": "장세모 \uD83D\uDC8D 황네모\n결혼합니다!",
-    "message": "저희 결혼합니다.\n\n 서로에게 알맞은 온도로 따뜻하던 우리.\n 부부로서 첫걸음을 내딛는 그 설렘의 순간에\n 소중한 분들을 초대합니다.",
+    "title": "최세진 \uD83D\uDC8D 백혜원\n결혼합니다!",
+    "message": "저희 결혼합니다.\n\n서로에게 알맞은 온도로 따뜻하던 우리.\n부부로서 첫걸음을 내딛는 그 설렘의 순간에\n소중한 분들을 초대합니다.",
     "host": {
       "groom": {
-        "name": "세모",
+        "name": "세진",
         "relation": "아들",
         "parents": [
           {
             "relation": "아버지",
-            "name": "장아빠"
+            "name": "최승호"
           },
           {
             "relation": "어머니",
-            "name": "이엄마"
+            "name": "신인해"
           }
         ]
       },
       "bride": {
-        "name": "네모",
+        "name": "혜원",
         "relation": "딸",
         "parents": [
           {
             "relation": "아버지",
-            "name": "황아빠"
+            "name": "백준식"
           },
           {
             "relation": "어머니",
-            "name": "이엄마"
+            "name": "허성숙"
           }
         ]
       }
     },
-    "eventDetail": "2024년 2월 17일 (토) 14:00\n아펠가모 공덕 라로브홀"
+    "eventDetail": "2025년 6월 6일 (금) 14:00\n채플웨딩홀 아벤티움"
   },
   "hostInfo": [
     {
       "host": "신랑측",
       "accountInfo": [
         {
-          "name": "장세모",
+          "name": "최세진",
           "relation": "신랑",
-          "bank": "카카오뱅크",
-          "account": "1234-56-789012",
-          "kakaopayAccount": "123",
-          "tossAccount": "456"
+          "bank": "토스뱅크",
+          "account": "1000-2314-3462",
+          "kakaopayAccount": "",
+          "tossAccount": "100023143462"
         },
         {
-          "name": "장아빠",
+          "name": "최승호",
           "relation": "아버지",
-          "bank": "농협",
-          "account": "123-45-678901"
-        },
-        {
-          "name": "이엄마",
-          "relation": "어머니",
-          "bank": "농협",
+          "bank": "기업은행",
           "account": "123-45-678901"
         }
       ]
@@ -64,10 +58,10 @@
       "host": "신부측",
       "accountInfo": [
         {
-          "name": "황네모",
+          "name": "백혜원",
           "relation": "신부",
-          "bank": "토스뱅크",
-          "account": "1234-5678-9012",
+          "bank": "우리은행",
+          "account": "100-2558-09-4725",
           "kakaopayAccount": "",
           "tossAccount": ""
         },
@@ -87,8 +81,8 @@
     }
   ],
   "mapInfo": {
-    "address1": "아펠가모 공덕 라로브홀",
-    "address2": "서울 마포구 마포대로 92\n효성해링턴스퀘어 B동 7층\n02-2197-0230",
+    "address1": "채플웨딩홀 아벤티움",
+    "address2": "서울 중구 청파로 464 \n브라운스톤 3층\n02-313-2480",
     "naverMap": "https://map.naver.com/p/directions/-/14132311.1099497,4514956.9078363,%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8%20%EA%B3%B5%EB%8D%95,1929913788,PLACE_POI/-/transit?c=15.00,0,0,0,dh",
     "kakaoMap": "https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,489503,1123003&rt1=&rt2=%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8%20%EA%B3%B5%EB%8D%95%EC%A0%90&rtIds=,630786038",
     "lat": 37.54222,
@@ -96,20 +90,24 @@
   },
   "locationInfo": [
     {
+      "title": "\uD83D\uDCCD 고속철도(지상역사)",
+      "desc": "\uD83D\uDC49\uD83C\uDFFB KTX서울역 서부광장(3번) 출구\n\uD83D\uDC49\uD83C\uDFFB 서부역 광장방향으로 나오신 후 우측 한국경제신문사 방향 이동 (도보 12분)"
+    },
+	{
       "title": "\uD83D\uDCCD 지하철",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 5·6호선 공덕역 7번 출구 (도보 2분)\n\uD83D\uDC49\uD83C\uDFFB 경의·중앙선, 공항철도 공덕역 10번 출구 (도보 30초)"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 2, 5호선 충정로역 4번 출구 (도보5분)\n출구방향으로 70M 직진 후 횡단보도 건너편 브라운스톤서울 3층\n\n\uD83D\uDC49\uD83C\uDFFB 1, 4호선 지하 서울역 3번출구\n출구 나와 등지고 한국경제신문사 방향 이동 (도보10분)\n "
     },
     {
       "title": "\uD83D\uDCCD 주차안내",
-      "desc": "\uD83D\uDC49\uD83C\uDFFB 건물 내 3-5층 2시간 무료주차\n(안내데스크에서 주차권 수령)"
+      "desc": "\uD83D\uDC49\uD83C\uDFFB 웨딩홀 지하1층(100대)\n\uD83D\uDC49\uD83C\uDFFB서소문성지 역사박물관 공영주차장(300대) (권장, 도보1분)\n\uD83D\uDC49\uD83C\uDFFB주차장 입구에서 안내요원이 주차권 발급(2시간)"
     }
   ],
   "googleCalendarInfo": {
-    "date": "2024-02-17",
+    "date": "2025-06-06",
     "time": "14:00",
-    "title": "장세모 ❤️ 황네모 결혼식",
+    "title": "최세진 ❤️ 백혜원 결혼식",
     "description": "서로에게 알맞은 온도로 따뜻하던 우리.\n부부로서 첫걸음을 내딛는 그 설렘의 순간에\n소중한 분들을 초대합니다.",
-    "location": "아펠가모 공덕 라로브홀"
+    "location": "채플웨딩홀 아벤티움"
   },
   "emojis": [
     "❤️",
