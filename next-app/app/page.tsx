@@ -16,7 +16,7 @@ const HomePage = () => {
       <AccountSection />
       <LocationSection />
       <GuestBookSection />
-      <FloatingBar isVisible />
+      <FloatingBar />
     </BackgroundContainer>
   );
 };
