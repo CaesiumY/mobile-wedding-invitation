@@ -1,9 +1,7 @@
-import React from "react";
-import SectionTitle from "../common/SectionTitle";
 import { NotebookPen } from "lucide-react";
+import SectionTitle from "../common/SectionTitle";
 import GuestCommentForm from "../GuestCommentForm";
 import GuestCommentList from "../GuestCommentList";
-import OverlayHiddenBox from "../layout/OverlayHiddenBox";
 
 const GuestBookSection = () => {
   return (
@@ -21,9 +19,7 @@ const GuestBookSection = () => {
       </div>
 
       <GuestCommentForm />
-      <OverlayHiddenBox>
-        <GuestCommentList />
-      </OverlayHiddenBox>
+      <GuestCommentList />
     </section>
   );
 };
