@@ -1,7 +1,7 @@
-import React from "react";
-import SectionTitle from "../common/SectionTitle";
 import { NotebookPen } from "lucide-react";
+import SectionTitle from "../common/SectionTitle";
 import GuestCommentForm from "../GuestCommentForm";
+import GuestCommentList from "../GuestCommentList";
 
 const GuestBookSection = () => {
   return (
@@ -19,6 +19,7 @@ const GuestBookSection = () => {
       </div>
 
       <GuestCommentForm />
+      <GuestCommentList />
     </section>
   );
 };

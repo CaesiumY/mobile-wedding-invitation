@@ -28,8 +28,7 @@ export default function AccountItem({
     try {
       await navigator.clipboard.writeText(account);
       toast.success("계좌번호가 복사되었습니다.😉😉");
-    } catch (error) {
-      console.error(error);
+    } catch {
       toast.error("계좌번호 복사에 실패했습니다.🥲🥲");
     }
   };

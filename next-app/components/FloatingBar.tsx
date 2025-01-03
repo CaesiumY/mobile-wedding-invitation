@@ -1,12 +1,14 @@
 "use client";
 
 import data from "@/data.json";
+import { realtimeDB } from "@/lib/firebase/config";
+import { increment, onValue, ref, update } from "firebase/database";
 import JSConfetti from "js-confetti";
 import { ArrowUp, Heart, Share } from "lucide-react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { Button } from "./ui/button";
 import AnimatedNumber from "./common/AnimatedNumber";
-import { useState } from "react";
+import { Button } from "./ui/button";
 
 interface FloatingBarProps {
   isVisible: boolean;
@@ -14,12 +16,20 @@ interface FloatingBarProps {
 
 const FloatingBar = ({ isVisible }: FloatingBarProps) => {
   const [count, setCount] = useState(0);
+  const [channelConnected, setChannelConnected] = useState(false);
 
-  const handleCount = () => {
+  const handleCount = async () => {
     const jsConfetti = new JSConfetti();
     jsConfetti.addConfetti({ emojis });
 
-    setCount((count) => count + 1);
+    const updates: Record<string, unknown> = {};
+    updates["likes"] = increment(1);
+
+    try {
+      await update(ref(realtimeDB), updates);
+    } catch {
+      toast.error("증가에 실패했습니다.🥲");
+    }
   };
 
   const handleShare = async () => {
@@ -35,6 +45,16 @@ const FloatingBar = ({ isVisible }: FloatingBarProps) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  useEffect(() => {
+    const countRef = ref(realtimeDB, "likes");
+    onValue(countRef, (snapshot) => {
+      if (snapshot.exists()) {
+        setChannelConnected(true);
+        setCount(snapshot.val());
+      }
+    });
+  }, []);
+
   if (!isVisible) return null;
 
   const { emojis } = data;
@@ -43,7 +63,7 @@ const FloatingBar = ({ isVisible }: FloatingBarProps) => {
     <nav className="fixed bottom-8 left-0 right-0 z-20 flex flex-row items-center justify-center gap-1">
       <Button onClick={handleCount} variant="outline">
         <Heart className="text-pink-400" />
-        <AnimatedNumber value={count} />
+        {channelConnected ? <AnimatedNumber value={count} /> : null}
       </Button>
       <Button onClick={handleShare} variant="outline">
         <Share className="text-pink-400" />

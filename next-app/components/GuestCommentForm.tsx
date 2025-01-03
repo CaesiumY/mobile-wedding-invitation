@@ -1,13 +1,16 @@
 "use client";
 
-import { Send } from "lucide-react";
+import { Loader2, Send } from "lucide-react";
 import React from "react";
 import { toast } from "sonner";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import { useCreateCommentMutation } from "@/query/useCommentQuery";
 
 const GuestCommentForm = () => {
+  const { mutateAsync: createComment, isPending } = useCreateCommentMutation();
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -24,8 +27,8 @@ const GuestCommentForm = () => {
       return toast.error("메시지를 입력해주세요.");
     }
 
-    console.log(name, message);
     // TODO: 파이어베이스에 메시지 저장
+    createComment({ name, content: message, date: new Date().toISOString() });
 
     toast.success("메시지를 보냈습니다. 💌");
     form.reset();
@@ -48,8 +51,13 @@ const GuestCommentForm = () => {
         className="w-full rounded border border-gray-300"
       />
 
-      <Button variant="secondary" type="submit" className="w-full rounded">
-        <Send />
+      <Button
+        variant="secondary"
+        type="submit"
+        className="w-full rounded"
+        disabled={isPending}
+      >
+        {isPending ? <Loader2 className="animate-spin" /> : <Send />}
         축하 메시지 남기기
       </Button>
     </form>

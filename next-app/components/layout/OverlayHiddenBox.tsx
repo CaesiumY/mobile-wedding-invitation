@@ -9,7 +9,7 @@ const OverlayHiddenBox = ({ children }: PropsWithChildren) => {
   const [isHidden, setIsHidden] = useState(true);
 
   return (
-    <div className="space-y-4">
+    <div className="w-full space-y-4">
       <div
         className={cn("relative overflow-hidden", { "h-[512px]": isHidden })}
       >
