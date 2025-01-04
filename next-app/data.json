@@ -44,7 +44,7 @@
           "bank": "토스뱅크",
           "account": "1000-2314-3462",
           "kakaopayAccount": "",
-          "tossAccount": "supertoss://send?bank=004&accountNumber=97686133257&amount=10000&origin=external&msg=테스트"
+          "tossAccount": "supertoss://send?accountNumber=97686133257&bank=004"
         },
         {
           "name": "최승호",
