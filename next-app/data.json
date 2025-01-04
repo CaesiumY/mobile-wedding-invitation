@@ -43,7 +43,7 @@
           "relation": "신랑",
           "bank": "토스뱅크",
           "account": "1000-2314-3462",
-          "kakaopayAccount": "",
+          "kakaopayAccount": "https://qr.kakaopay.com/Ej8zJf4Ps",
           "tossAccount": "supertoss://send?accountNumber=97686133257&bank=004"
         },
         {
