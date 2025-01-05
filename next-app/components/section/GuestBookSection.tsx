@@ -14,7 +14,7 @@ const GuestBookSection = () => {
         <p className="whitespace-pre-line">
           메시지를 남겨주세요.
           <br />
-          비밀글은 신랑 신부만 볼 수 있는 추억이 됩니다 :)
+          비밀 글은 신랑 신부만 볼 수 있는 추억이 됩니다 :)
         </p>
       </div>
 

@@ -13,7 +13,6 @@ import {
   query,
   QueryDocumentSnapshot,
   startAfter,
-  startAt,
 } from "firebase/firestore";
 import { firestore } from "../lib/firebase/config";
 
@@ -21,6 +20,7 @@ export interface Comment {
   name: string;
   date: string;
   content: string;
+  isVisible: boolean;
 }
 
 export const useCommentQuery = () => {
@@ -90,43 +90,11 @@ export const useCommentPagination = async () => {
   };
 };
 
-const PAGE_SIZE = 5;
-
-export const usePagedCommentQuery = (page: number = 1) => {
-  return useQuery({
-    queryKey: ["comments", "page", page],
-    queryFn: async () => {
-      // 현재 페이지의 시작 위치 계산
-      const startIndex = (page - 1) * PAGE_SIZE;
-
-      const queryRef = query(
-        collection(firestore, "comments"),
-        orderBy("date", "desc"),
-        startAt(startIndex),
-        limit(PAGE_SIZE),
-      );
-
-      const snapshot = await getDocs(queryRef);
-      const comments = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...(doc.data() as Comment),
-      }));
-
-      console.log("comments :>> ", comments);
-
-      return {
-        comments,
-        hasNextPage: comments.length === PAGE_SIZE,
-      };
-    },
-  });
-};
-
 export interface CommentPageParam {
   lastDoc?: QueryDocumentSnapshot;
 }
 
-export const useInfiniteCommentQuery = () => {
+export const useInfiniteCommentQuery = (pageSize = 5) => {
   return useInfiniteQuery({
     queryKey: ["comments", "infinite"],
     queryFn: async ({ pageParam }: { pageParam?: CommentPageParam }) => {
@@ -134,7 +102,7 @@ export const useInfiniteCommentQuery = () => {
       let queryRef = query(
         commentsCollection,
         orderBy("date", "desc"),
-        limit(PAGE_SIZE),
+        limit(pageSize),
       );
 
       // pageParam에 lastDoc가 있다면 => startAfter로 커서 이동
@@ -143,7 +111,7 @@ export const useInfiniteCommentQuery = () => {
           commentsCollection,
           orderBy("date", "desc"),
           startAfter(pageParam.lastDoc),
-          limit(PAGE_SIZE),
+          limit(pageSize),
         );
       }
 

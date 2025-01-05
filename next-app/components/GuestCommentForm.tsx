@@ -1,14 +1,17 @@
 "use client";
 
 import { Loader2, Send } from "lucide-react";
-import React from "react";
+import React, { useId } from "react";
 import { toast } from "sonner";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useCreateCommentMutation } from "@/query/useCommentQuery";
+import { Checkbox } from "./ui/checkbox";
+import { Label } from "./ui/label";
 
 const GuestCommentForm = () => {
+  const isVisibleId = useId();
   const { mutateAsync: createComment, isPending } = useCreateCommentMutation();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -18,6 +21,8 @@ const GuestCommentForm = () => {
 
     const name = formData.get("name") as string;
     const message = formData.get("message") as string;
+    const isVisible = !!formData.get("isVisible");
+    console.log("🚀 ~ handleSubmit ~ isVisible:", isVisible);
 
     if (!name) {
       return toast.error("이름을 입력해주세요.");
@@ -28,7 +33,12 @@ const GuestCommentForm = () => {
     }
 
     // TODO: 파이어베이스에 메시지 저장
-    createComment({ name, content: message, date: new Date().toISOString() });
+    createComment({
+      name,
+      content: message,
+      date: new Date().toISOString(),
+      isVisible,
+    });
 
     toast.success("메시지를 보냈습니다. 💌");
     form.reset();
@@ -50,6 +60,11 @@ const GuestCommentForm = () => {
         name="message"
         className="w-full rounded border border-gray-300"
       />
+
+      <div className="flex flex-row items-center space-x-2 self-end py-2">
+        <Checkbox id={isVisibleId} name="isVisible" />
+        <Label htmlFor={isVisibleId}>비밀 글</Label>
+      </div>
 
       <Button
         variant="secondary"
