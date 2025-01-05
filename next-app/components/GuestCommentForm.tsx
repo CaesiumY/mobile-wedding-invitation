@@ -11,7 +11,7 @@ import { Checkbox } from "./ui/checkbox";
 import { Label } from "./ui/label";
 
 const GuestCommentForm = () => {
-  const isVisibleId = useId();
+  const guestCommentVisibilityId = useId();
   const { mutateAsync: createComment, isPending } = useCreateCommentMutation();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -21,8 +21,7 @@ const GuestCommentForm = () => {
 
     const name = formData.get("name") as string;
     const message = formData.get("message") as string;
-    const isVisible = !!formData.get("isVisible");
-    console.log("🚀 ~ handleSubmit ~ isVisible:", isVisible);
+    const isSecret = !!formData.get("isSecret");
 
     if (!name) {
       return toast.error("이름을 입력해주세요.");
@@ -37,7 +36,7 @@ const GuestCommentForm = () => {
       name,
       content: message,
       date: new Date().toISOString(),
-      isVisible,
+      isSecret,
     });
 
     toast.success("메시지를 보냈습니다. 💌");
@@ -62,8 +61,8 @@ const GuestCommentForm = () => {
       />
 
       <div className="flex flex-row items-center space-x-2 self-end py-2">
-        <Checkbox id={isVisibleId} name="isVisible" />
-        <Label htmlFor={isVisibleId}>비밀 글</Label>
+        <Checkbox id={guestCommentVisibilityId} name="isSecret" />
+        <Label htmlFor={guestCommentVisibilityId}>비밀 글</Label>
       </div>
 
       <Button

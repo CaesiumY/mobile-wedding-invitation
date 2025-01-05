@@ -13,6 +13,7 @@ import {
   query,
   QueryDocumentSnapshot,
   startAfter,
+  where,
 } from "firebase/firestore";
 import { firestore } from "../lib/firebase/config";
 
@@ -20,7 +21,7 @@ export interface Comment {
   name: string;
   date: string;
   content: string;
-  isVisible: boolean;
+  isSecret: boolean;
 }
 
 export const useCommentQuery = () => {
@@ -59,37 +60,6 @@ export const useCreateCommentMutation = () => {
   });
 };
 
-export const useCommentPagination = async () => {
-  // Query the first page
-  const firstQuery = query(
-    collection(firestore, "comments"),
-    orderBy("date", "desc"),
-    limit(5),
-  );
-  const firstSnap = await getDocs(firstQuery);
-  const lastVisible = firstSnap.docs[firstSnap.docs.length - 1];
-
-  // Query the next page
-  const nextQuery = query(
-    collection(firestore, "comments"),
-    orderBy("date", "desc"),
-    startAfter(lastVisible),
-    limit(5),
-  );
-  const nextSnap = await getDocs(nextQuery);
-
-  return {
-    firstPage: firstSnap.docs.map((doc) => ({
-      id: doc.id,
-      ...(doc.data() as Comment),
-    })),
-    nextPage: nextSnap.docs.map((doc) => ({
-      id: doc.id,
-      ...(doc.data() as Comment),
-    })),
-  };
-};
-
 export interface CommentPageParam {
   lastDoc?: QueryDocumentSnapshot;
 }
@@ -101,6 +71,7 @@ export const useInfiniteCommentQuery = (pageSize = 5) => {
       const commentsCollection = collection(firestore, "comments");
       let queryRef = query(
         commentsCollection,
+        where("isSecret", "==", false),
         orderBy("date", "desc"),
         limit(pageSize),
       );
@@ -109,6 +80,7 @@ export const useInfiniteCommentQuery = (pageSize = 5) => {
       if (pageParam?.lastDoc) {
         queryRef = query(
           commentsCollection,
+          where("isSecret", "==", false),
           orderBy("date", "desc"),
           startAfter(pageParam.lastDoc),
           limit(pageSize),
