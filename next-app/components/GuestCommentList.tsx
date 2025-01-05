@@ -13,6 +13,7 @@ const GuestCommentList = () => {
     fetchNextPage,
     isLoading,
   } = useInfiniteCommentQuery();
+
   const [parent] = useAutoAnimate();
 
   if (isLoading) {

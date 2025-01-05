@@ -4,9 +4,16 @@
 // Since QueryClientProvider relies on useContext under the hood, we have to put 'use client' on top
 import {
   isServer,
+  QueryCache,
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
+
+const queryCache = new QueryCache({
+  onError: (error) => {
+    console.error(error);
+  },
+});
 
 function makeQueryClient() {
   return new QueryClient({
@@ -17,6 +24,7 @@ function makeQueryClient() {
         staleTime: 60 * 1000,
       },
     },
+    queryCache,
   });
 }
 
