@@ -6,6 +6,7 @@ import kakaoPay from "@images/icons/kakaopay.png";
 import tossPay from "@images/icons/toss.png";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
+import { isMobile } from "@/lib/utils";
 
 interface AccountItemProps {
   name: string;
@@ -24,6 +25,8 @@ export default function AccountItem({
   kakaopayAccount,
   tossAccount,
 }: AccountItemProps) {
+  const isMobileDevice = isMobile();
+
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(account);
@@ -54,7 +57,7 @@ export default function AccountItem({
         </Button>
       </div>
 
-      {(kakaopayAccount || tossAccount) && (
+      {isMobileDevice && (kakaopayAccount || tossAccount) && (
         <div className="flex w-full gap-1">
           {kakaopayAccount && (
             <a
