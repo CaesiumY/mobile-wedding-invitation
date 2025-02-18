@@ -22,7 +22,7 @@ const AccountAccordian = ({ title, children }: AccountAccordianProps) => {
         value="item-1"
         className="rounded-md border-none bg-secondary"
       >
-        <AccordionTrigger className="font-santokki p-4 hover:no-underline">
+        <AccordionTrigger className="p-4 font-santokki hover:no-underline">
           {title}
         </AccordionTrigger>
         <AccordionContent className="rounded-b-md border border-t-0 border-secondary bg-white p-4 text-left">
