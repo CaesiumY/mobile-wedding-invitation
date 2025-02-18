@@ -7,9 +7,6 @@ import img06 from "@images/gallery/06.jpg";
 import img07 from "@images/gallery/07.jpg";
 import img08 from "@images/gallery/08.jpg";
 import img09 from "@images/gallery/09.jpg";
-import img10 from "@images/gallery/10.jpg";
-import img11 from "@images/gallery/11.jpg";
-import img12 from "@images/gallery/12.jpg";
 
 export const galleryImages = [
   {
@@ -63,24 +60,6 @@ export const galleryImages = [
   {
     alt: "gallery-image-09",
     source: img09,
-    width: 640,
-    height: 960,
-  },
-  {
-    alt: "gallery-image-10",
-    source: img10,
-    width: 640,
-    height: 960,
-  },
-  {
-    alt: "gallery-image-11",
-    source: img11,
-    width: 640,
-    height: 960,
-  },
-  {
-    alt: "gallery-image-12",
-    source: img12,
     width: 640,
     height: 960,
   },
