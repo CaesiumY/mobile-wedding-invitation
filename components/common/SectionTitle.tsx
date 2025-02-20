@@ -7,7 +7,7 @@ interface SectionTitleProps {
 
 const SectionTitle = ({ title, icon }: SectionTitleProps) => {
   return (
-    <h2 className="font-santokki flex flex-row items-center justify-center gap-2 whitespace-pre-line text-2xl text-primary">
+    <h2 className="font-dodum flex flex-row items-center justify-center gap-2 whitespace-pre-line text-2xl font-bold text-primary">
       {icon} <span>{title}</span>
     </h2>
   );

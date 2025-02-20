@@ -1,15 +1,15 @@
 import localFont from "next/font/local";
 
-const hSSanTokki20 = localFont({
-  src: "../public/fonts/HSSanTokki20-Regular.woff2",
+const gangwonEduFont = localFont({
+  src: "../public/fonts/GangwonEdu_OTFBoldA.woff",
   display: "swap",
-  variable: "--font-hssantokki20",
+  variable: "--font-gangwon-edu",
 });
 
-const suiteRegular = localFont({
-  src: "../public/fonts/SUITE-Regular.woff2",
+const gowunDodumFont = localFont({
+  src: "../public/fonts/GowunDodum-Regular.woff",
   display: "swap",
-  variable: "--font-suite",
+  variable: "--font-gowun-dodum",
 });
 
-export { hSSanTokki20, suiteRegular };
+export { gangwonEduFont, gowunDodumFont };

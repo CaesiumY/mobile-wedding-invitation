@@ -15,7 +15,7 @@ export default function InvitationSection() {
 
       <div className="space-y-8">
         <p className="whitespace-pre-line leading-loose">{message}</p>
-        <div className="font-santokki whitespace-nowrap">
+        <div className="font-dodum whitespace-nowrap font-bold">
           <HostInfo person={host.groom} />
           <HostInfo person={host.bride} />
         </div>

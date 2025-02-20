@@ -18,7 +18,7 @@ const MainSection = () => {
         height={614}
       />
       <div className="flex flex-col items-center gap-8">
-        <h1 className="font-santokki whitespace-pre-line text-4xl leading-tight text-[#2F2120]">
+        <h1 className="font-dodum whitespace-pre-line text-4xl font-bold leading-tight text-[#2F2120]">
           {title}
         </h1>
         <p className="whitespace-pre-line text-lg leading-snug text-[#2F2120]">

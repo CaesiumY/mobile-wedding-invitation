@@ -12,7 +12,7 @@ const LocationSection = () => {
     <section className="mx-auto flex max-w-[400px] flex-col items-center gap-8">
       <div className="space-y-3">
         <SectionTitle title="오시는 길" icon={<Map strokeWidth={3} />} />
-        <h3 className="font-santokki whitespace-pre-line text-primary">
+        <h3 className="font-dodum whitespace-pre-line font-bold text-primary">
           {mapInfo.address1}
         </h3>
         <p className="whitespace-pre-line text-center font-extralight">
@@ -38,7 +38,9 @@ const LocationSection = () => {
       <div className="flex w-full flex-col items-start gap-5">
         {locationInfo?.map((item) => (
           <div key={item.title} className="space-y-1 text-left">
-            <h4 className="font-santokki text-lg text-primary">{item.title}</h4>
+            <h4 className="font-dodum text-lg font-bold text-primary">
+              {item.title}
+            </h4>
             <p className="whitespace-pre-line font-extralight">{item.desc}</p>
           </div>
         ))}

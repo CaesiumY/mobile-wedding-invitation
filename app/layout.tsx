@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import data from "@/data.json";
 import type { Metadata } from "next";
 import Script from "next/script";
-import { hSSanTokki20, suiteRegular } from "./font";
+import { gangwonEduFont, gowunDodumFont } from "./font";
 import "./globals.css";
 import Providers from "./providers";
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${hSSanTokki20.variable} ${suiteRegular.variable}`}
+      className={`${gangwonEduFont.variable} ${gowunDodumFont.variable}`}
     >
       <body className="break-keep antialiased">
         <Providers>{children}</Providers>

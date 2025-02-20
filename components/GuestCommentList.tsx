@@ -29,7 +29,7 @@ const GuestCommentList = () => {
               key={id}
               className="space-y-2 rounded-lg border border-primary bg-white p-4"
             >
-              <h3 className="font-santokki font-semibold">{name}</h3>
+              <h3 className="font-dodum font-bold">{name}</h3>
               <p className="text-gray-700">{content}</p>
             </li>
           ))}
