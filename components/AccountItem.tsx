@@ -66,10 +66,6 @@ export default function AccountItem({
         <div className="flex w-full gap-1">
           {kakaopayAccount && (
             <a
-              onClick={(e) => {
-                e.preventDefault();
-                copyAndOpenUrl(kakaopayAccount);
-              }}
               href={kakaopayAccount}
               target="_blank"
               rel="noreferrer"
