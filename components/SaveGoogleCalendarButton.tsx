@@ -30,7 +30,7 @@ const SaveGoogleCalendarLink = () => {
       }
     >
       <Calendar />
-      구글 캘린더 추가하기
+      <span className="self-end">구글 캘린더 추가하기</span>
     </Button>
   );
 };

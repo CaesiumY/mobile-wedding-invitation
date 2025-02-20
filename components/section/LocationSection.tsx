@@ -26,10 +26,14 @@ const LocationSection = () => {
 
         <div className="flex justify-center gap-2">
           <a href={mapInfo.naverMap} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline">네이버 지도</Button>
+            <Button variant="outline" className="items-end">
+              네이버 지도
+            </Button>
           </a>
           <a href={mapInfo.kakaoMap} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline">카카오맵</Button>
+            <Button variant="outline" className="items-end">
+              카카오맵
+            </Button>
           </a>
         </div>
       </div>

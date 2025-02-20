@@ -43,7 +43,7 @@ const GuestCommentList = () => {
         disabled={!hasNextPage}
       >
         <ChevronDown />
-        더보기
+        <span className="self-end">더보기</span>
       </Button>
     </ul>
   );

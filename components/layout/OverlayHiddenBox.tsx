@@ -26,7 +26,7 @@ const OverlayHiddenBox = ({ children }: PropsWithChildren) => {
           onClick={() => setIsHidden(false)}
         >
           <ChevronDown />
-          더보기
+          <span className="self-end">더보기</span>
         </Button>
       )}
     </div>

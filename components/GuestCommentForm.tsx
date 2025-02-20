@@ -60,10 +60,13 @@ const GuestCommentForm = () => {
         className="w-full rounded border border-gray-300"
       />
 
-      <div className="flex flex-row items-center space-x-2 self-end py-2">
+      <Label
+        htmlFor={guestCommentVisibilityId}
+        className="flex flex-row items-center space-x-2 self-end py-2"
+      >
         <Checkbox id={guestCommentVisibilityId} name="isSecret" />
-        <Label htmlFor={guestCommentVisibilityId}>비밀 글</Label>
-      </div>
+        <span className="self-end">비밀 글</span>
+      </Label>
 
       <Button
         variant="secondary"
@@ -72,7 +75,7 @@ const GuestCommentForm = () => {
         disabled={isPending}
       >
         {isPending ? <Loader2 className="animate-spin" /> : <Send />}
-        축하 메시지 남기기
+        <span className="self-end">축하 메시지 남기기</span>
       </Button>
     </form>
   );
