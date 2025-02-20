@@ -14,7 +14,7 @@ const PhotoGallery = () => {
             key={index}
             cropped
             original={image.source.src}
-            thumbnail={image.source.src}
+            thumbnail={image.source.blurDataURL}
             width={image.source.width}
             height={image.source.height}
           >
@@ -25,6 +25,8 @@ const PhotoGallery = () => {
                 alt={image.alt}
                 ref={ref}
                 onClick={open}
+                placeholder="blur"
+                loading="eager"
               />
             )}
           </Item>

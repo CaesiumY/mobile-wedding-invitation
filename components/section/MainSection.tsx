@@ -15,9 +15,9 @@ const MainSection = () => {
         <Image
           src={mainImage}
           alt="메인 이미지"
-          className="rounded-t-[200px] pt-4"
-          width={396}
-          height={614}
+          className="h-[614px] w-[396px] rounded-t-[200px] pt-4"
+          width={468}
+          height={701}
           priority
           quality={100}
         />

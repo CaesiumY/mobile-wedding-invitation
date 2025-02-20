@@ -10,57 +10,47 @@ const LocationSection = () => {
   const { mapInfo, locationInfo } = data;
 
   return (
-    <ScrollFadeIn>
-      <section className="mx-auto flex max-w-[400px] flex-col items-center gap-8">
-        <div className="space-y-3">
-          <SectionTitle title="오시는 길" icon={<Map strokeWidth={3} />} />
-          <h3 className="whitespace-pre-line font-dodum font-bold text-primary">
-            {mapInfo.address1}
-          </h3>
-          <p className="whitespace-pre-line text-center font-extralight">
-            {mapInfo.address2}
-          </p>
+    <section className="mx-auto flex max-w-[400px] flex-col items-center gap-8">
+      <ScrollFadeIn className="space-y-3">
+        <SectionTitle title="오시는 길" icon={<Map strokeWidth={3} />} />
+        <h3 className="whitespace-pre-line font-dodum font-bold text-primary">
+          {mapInfo.address1}
+        </h3>
+        <p className="whitespace-pre-line text-center font-extralight">
+          {mapInfo.address2}
+        </p>
+      </ScrollFadeIn>
+
+      {/* map */}
+      <ScrollFadeIn className="w-full space-y-2">
+        <KakaoMap />
+
+        <div className="flex justify-center gap-2">
+          <a href={mapInfo.naverMap} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="items-end">
+              네이버 지도
+            </Button>
+          </a>
+          <a href={mapInfo.kakaoMap} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="items-end">
+              카카오맵
+            </Button>
+          </a>
         </div>
+      </ScrollFadeIn>
 
-        {/* map */}
-        <div className="w-full space-y-2">
-          <KakaoMap />
-
-          <div className="flex justify-center gap-2">
-            <a
-              href={mapInfo.naverMap}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" className="items-end">
-                네이버 지도
-              </Button>
-            </a>
-            <a
-              href={mapInfo.kakaoMap}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" className="items-end">
-                카카오맵
-              </Button>
-            </a>
+      {/* Address */}
+      <ScrollFadeIn className="flex w-full flex-col items-start gap-5">
+        {locationInfo?.map((item) => (
+          <div key={item.title} className="space-y-1 text-left">
+            <h4 className="font-dodum text-lg font-bold text-primary">
+              {item.title}
+            </h4>
+            <p className="whitespace-pre-line font-extralight">{item.desc}</p>
           </div>
-        </div>
-
-        {/* Address */}
-        <div className="flex w-full flex-col items-start gap-5">
-          {locationInfo?.map((item) => (
-            <div key={item.title} className="space-y-1 text-left">
-              <h4 className="font-dodum text-lg font-bold text-primary">
-                {item.title}
-              </h4>
-              <p className="whitespace-pre-line font-extralight">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    </ScrollFadeIn>
+        ))}
+      </ScrollFadeIn>
+    </section>
   );
 };
 
