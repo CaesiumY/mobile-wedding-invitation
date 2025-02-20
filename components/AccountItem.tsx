@@ -36,6 +36,11 @@ export default function AccountItem({
     }
   };
 
+  const copyAndOpenUrl = (url: string) => {
+    handleCopy();
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="flex flex-col gap-1 border-b border-[#dfdfdf] py-3 last:border-b-0">
       <p className="flex items-center gap-1">
@@ -61,6 +66,10 @@ export default function AccountItem({
         <div className="flex w-full gap-1">
           {kakaopayAccount && (
             <a
+              onClick={(e) => {
+                e.preventDefault();
+                copyAndOpenUrl(kakaopayAccount);
+              }}
               href={kakaopayAccount}
               target="_blank"
               rel="noreferrer"
@@ -71,6 +80,10 @@ export default function AccountItem({
           )}
           {tossAccount && (
             <a
+              onClick={(e) => {
+                e.preventDefault();
+                copyAndOpenUrl(tossAccount);
+              }}
               href={tossAccount}
               target="_blank"
               rel="noreferrer"
