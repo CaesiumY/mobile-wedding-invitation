@@ -5,6 +5,7 @@ import Script from "next/script";
 import { gangwonEduFont, gowunDodumFont } from "./font";
 import "./globals.css";
 import Providers from "./providers";
+import { PreloadResources } from "./preload-resources";
 
 export const metadata: Metadata = {
   title: data.greeting.title,
@@ -22,6 +23,7 @@ export default function RootLayout({
       className={`${gangwonEduFont.variable} ${gowunDodumFont.variable}`}
     >
       <body className="break-keep antialiased">
+        <PreloadResources />
         <Providers>{children}</Providers>
         <Toaster
           position="top-center"

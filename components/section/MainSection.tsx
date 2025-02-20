@@ -16,6 +16,9 @@ const MainSection = () => {
         className="w-full max-w-[450px] rounded-t-[200px] pt-4"
         width={396}
         height={614}
+        priority
+        quality={100}
+        placeholder="blur"
       />
       <div className="flex flex-col items-center gap-8">
         <h1 className="font-dodum whitespace-pre-line text-4xl font-bold leading-tight text-[#2F2120]">
