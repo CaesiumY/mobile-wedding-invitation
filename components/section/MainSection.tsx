@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import mainImage from "@images/main.jpg";
+import mainImage from "@images/main.webp";
 import data from "@/data.json";
 
 const MainSection = () => {
@@ -18,7 +18,6 @@ const MainSection = () => {
         height={614}
         priority
         quality={100}
-        placeholder="blur"
       />
       <div className="flex flex-col items-center gap-8">
         <h1 className="font-dodum whitespace-pre-line text-4xl font-bold leading-tight text-[#2F2120]">

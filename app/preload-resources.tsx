@@ -3,7 +3,7 @@
 import ReactDOM from "react-dom";
 
 export function PreloadResources() {
-  ReactDOM.preload("/images/background.png", { as: "image" });
+  ReactDOM.preload("/images/background.avif", { as: "image" });
 
   return null;
 }
