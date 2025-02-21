@@ -1,6 +1,6 @@
 {
   "greeting": {
-    "title": "최세진 \uD83D\uDC8D 백혜원\n결혼합니다!",
+    "title": "최세진 \uD83D\uDC8D 백혜원\n 결혼합니다!",
     "message": "주님의 인도하심 속에서\n서로를 위한 기도로 준비한 두 사람이\n하나님의 사랑 안에서 하나 되려 합니다.\n\n부디 오셔서 저희의 새로운 출발을 축복해 주시고,\n함께 기쁨을 나누어 주시면 감사하겠습니다.",
     "host": {
       "groom": {
@@ -51,7 +51,7 @@
           "relation": "아버지",
           "bank": "기업은행",
           "account": "123-45-678901",
-		  "tossAccount": "supertoss://send?origin=external"
+          "tossAccount": "supertoss://send?origin=external"
         }
       ]
     },
@@ -95,7 +95,7 @@
       "title": "\uD83D\uDCCD 고속철도(지상역사)",
       "desc": "\uD83D\uDC49\uD83C\uDFFB KTX서울역 서부광장(3번) 출구\n\uD83D\uDC49\uD83C\uDFFB 서부역 광장방향으로 나오신 후 우측 한국경제신문사 방향 이동 (도보 12분)"
     },
-	{
+    {
       "title": "\uD83D\uDCCD 지하철",
       "desc": "\uD83D\uDC49\uD83C\uDFFB 2, 5호선 충정로역 4번 출구 (도보5분)\n출구방향으로 70M 직진 후 횡단보도 건너편 브라운스톤서울 3층\n\n\uD83D\uDC49\uD83C\uDFFB 1, 4호선 지하 서울역 3번출구\n출구 나와 등지고 한국경제신문사 방향 이동 (도보10분)\n "
     },
