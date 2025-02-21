@@ -1,12 +1,12 @@
-import img01 from "@images/gallery/01.jpg";
-import img02 from "@images/gallery/02.jpg";
-import img03 from "@images/gallery/03.jpg";
-import img04 from "@images/gallery/04.jpg";
-import img05 from "@images/gallery/05.jpg";
-import img06 from "@images/gallery/06.jpg";
-import img07 from "@images/gallery/07.jpg";
-import img08 from "@images/gallery/08.jpg";
-import img09 from "@images/gallery/09.jpg";
+import img01 from "@images/gallery/01.webp";
+import img02 from "@images/gallery/02.webp";
+import img03 from "@images/gallery/03.webp";
+import img04 from "@images/gallery/04.webp";
+import img05 from "@images/gallery/05.webp";
+import img06 from "@images/gallery/06.webp";
+import img07 from "@images/gallery/07.webp";
+import img08 from "@images/gallery/08.webp";
+import img09 from "@images/gallery/09.webp";
 
 export const galleryImages = [
   {
