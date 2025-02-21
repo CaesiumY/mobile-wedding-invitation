@@ -63,7 +63,7 @@
           "relation": "신부",
           "bank": "우리은행",
           "account": "100-2558-09-4725",
-          "kakaopayAccount": "",
+          "kakaopayAccount": "https://qr.kakaopay.com/FOArg2sQx",
           "tossAccount": "supertoss://send?origin=external"
         },
         {
