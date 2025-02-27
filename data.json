@@ -52,6 +52,13 @@
           "bank": "우리은행",
           "account": "1002-544-593905",
           "tossAccount": "supertoss://send?origin=external"
+        },
+		{
+          "name": "신인해",
+          "relation": "어머니",
+          "bank": "기업은행",
+          "account": "329-030516-01-021",
+          "tossAccount": "supertoss://send?origin=external"
         }
       ]
     },
