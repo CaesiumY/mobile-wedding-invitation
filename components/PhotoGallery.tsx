@@ -27,7 +27,7 @@ const PhotoGallery = () => {
 
   return (
     <Gallery onOpen={onOpen}>
-      <PreventContext className="mx-auto grid max-w-96 grid-cols-2 gap-1 sm:grid-cols-3">
+      <PreventContext className="mx-auto max-w-96 columns-2 gap-2 sm:columns-3">
         {galleryImages.map((image, index) => (
           <Item
             key={image.alt + index}
@@ -40,7 +40,7 @@ const PhotoGallery = () => {
           >
             {({ ref, open }) => (
               <Image
-                className="cursor-pointer object-cover"
+                className="mb-2 cursor-pointer rounded-sm object-cover"
                 src={image.source}
                 alt={image.alt}
                 ref={ref}
