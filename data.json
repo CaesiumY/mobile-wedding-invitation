@@ -49,8 +49,8 @@
         {
           "name": "최승호",
           "relation": "아버지",
-          "bank": "기업은행",
-          "account": "123-45-678901",
+          "bank": "우리은행",
+          "account": "1002-544-593905",
           "tossAccount": "supertoss://send?origin=external"
         }
       ]
@@ -69,14 +69,16 @@
         {
           "name": "백준식",
           "relation": "아버지",
-          "bank": "농협",
-          "account": "123-45-678901"
+          "bank": "카카오뱅크",
+          "account": "3333-1240-0947-9",
+		  "tossAccount": "supertoss://send?origin=external"
         },
         {
           "name": "허성숙",
           "relation": "어머니",
           "bank": "농협",
-          "account": "123-45-678901"
+          "account": "3021-1149-0944-1",
+		  "tossAccount": "supertoss://send?origin=external"
         }
       ]
     }
