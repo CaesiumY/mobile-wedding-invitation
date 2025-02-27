@@ -46,7 +46,6 @@ const PhotoGallery = () => {
                 ref={ref}
                 onClick={open}
                 placeholder="blur"
-                loading="eager"
               />
             )}
           </Item>
