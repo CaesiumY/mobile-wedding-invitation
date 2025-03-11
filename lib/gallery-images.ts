@@ -1,19 +1,19 @@
-import img01 from "@images/gallery/01.webp";
-import img02 from "@images/gallery/02.webp";
-import img03 from "@images/gallery/03.webp";
-import img04 from "@images/gallery/04.webp";
-import img05 from "@images/gallery/05.webp";
-import img06 from "@images/gallery/06.webp";
-import img07 from "@images/gallery/07.webp";
-import img08 from "@images/gallery/08.webp";
-import img09 from "@images/gallery/09.webp";
-import img10 from "@images/gallery/10.webp";
-import img11 from "@images/gallery/11.webp";
-import img12 from "@images/gallery/12.webp";
-import img13 from "@images/gallery/13.webp";
-import img14 from "@images/gallery/14.webp";
-import img15 from "@images/gallery/15.webp";
-import img16 from "@images/gallery/16.webp";
+import img01 from "@images/gallery/001.webp";
+import img02 from "@images/gallery/002.webp";
+import img03 from "@images/gallery/003.webp";
+import img04 from "@images/gallery/004.webp";
+import img05 from "@images/gallery/005.webp";
+import img06 from "@images/gallery/006.webp";
+import img07 from "@images/gallery/007.webp";
+import img08 from "@images/gallery/008.webp";
+import img09 from "@images/gallery/009.webp";
+import img10 from "@images/gallery/010.webp";
+import img11 from "@images/gallery/011.webp";
+import img12 from "@images/gallery/012.webp";
+import img13 from "@images/gallery/013.webp";
+import img14 from "@images/gallery/014.webp";
+import img15 from "@images/gallery/015.webp";
+import img16 from "@images/gallery/016.webp";
 
 export const galleryImages = [
   {
