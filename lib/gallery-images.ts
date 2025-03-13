@@ -1,3 +1,4 @@
+// 이 파일은 자동으로 생성되었습니다. 직접 수정하지 마세요.
 import img01 from "@images/gallery/001.webp";
 import img02 from "@images/gallery/002.webp";
 import img03 from "@images/gallery/003.webp";
@@ -139,7 +140,7 @@ export const galleryImages = [
     source: img20,
     width: 640,
     height: 960,
-  },
+  }
 ] as const;
 
 export type GalleryImage = (typeof galleryImages)[number];

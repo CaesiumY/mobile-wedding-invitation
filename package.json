@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/generate-gallery-images.js",
     "dev": "next dev --turbopack",
+    "prebuild": "node scripts/generate-gallery-images.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen:image": "node scripts/generate-gallery-images.js"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
