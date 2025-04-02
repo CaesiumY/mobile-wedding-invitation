@@ -1,5 +1,5 @@
 "use client";
-import { HTMLMotionProps, motion } from "framer-motion";
+import { HTMLMotionProps, motion } from "motion/react";
 import { PropsWithChildren } from "react";
 
 const FadeIn = ({

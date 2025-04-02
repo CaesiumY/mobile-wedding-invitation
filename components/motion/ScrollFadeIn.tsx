@@ -1,5 +1,5 @@
 "use client";
-import { HTMLMotionProps, motion, useInView } from "framer-motion";
+import { HTMLMotionProps, motion, useInView } from "motion/react";
 import { useRef } from "react";
 
 interface ScrollFadeInProps extends HTMLMotionProps<"div"> {
