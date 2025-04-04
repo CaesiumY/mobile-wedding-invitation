@@ -46,11 +46,11 @@ const FloatingBar = () => {
       </Button>
       <Button onClick={handleShare} variant="outline">
         <Share className="text-pink-400" />
-        <span className="mt-1 text-base text-gray-600">공유</span>
+        <span className="text-base text-gray-600">공유</span>
       </Button>
       <Button onClick={handleScroll} variant="outline">
         <ArrowUp className="text-pink-400" />
-        <span className="mt-1 text-base text-gray-600">위로</span>
+        <span className="text-base text-gray-600">위로</span>
       </Button>
     </nav>
   );
