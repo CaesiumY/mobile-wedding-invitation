@@ -1,3 +1,5 @@
+"use client";
+
 import { calculateDDay } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -15,11 +17,11 @@ const DDayBadge = ({ className }: DDayBadgeProps) => {
     <Badge
       variant="outline"
       className={cn(
-        "border-transparent bg-[#F9EAE1] px-4 py-1.5 text-lg font-semibold text-[#2F2120] shadow-sm",
+        "border-transparent bg-[#F9EAE1] px-4 py-1.5 font-dodum text-lg font-semibold text-[#2F2120] shadow-sm",
         className,
       )}
     >
-      {dDay === "0" ? "D-DAY!" : `D${dDay}`}
+      <time>{dDay === "0" ? "D-DAY!" : `D${dDay}`}</time>
     </Badge>
   );
 };
