@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
-import { promisify } from "util";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { promisify } from "node:util";
+import { fileURLToPath } from "node:url";
 
 const writeFilePromise = promisify(fs.writeFile);
 const readDirPromise = promisify(fs.readdir);
@@ -18,9 +18,21 @@ const GALLERY_DIR = path.join(PROJECT_ROOT, "public", "images", "gallery");
 const OUTPUT_FILE = path.join(PROJECT_ROOT, "lib", "gallery-images.ts");
 
 // 이미지 파일 확장자 필터
-const IMAGE_EXTENSIONS = [".webp", ".jpg", ".jpeg", ".png", ".gif", ".avif"];
+const IMAGE_EXTENSIONS: string[] = [
+  ".webp",
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".gif",
+  ".avif",
+];
 
-async function getImageDimensions(imagePath) {
+interface ImageDimensions {
+  width: number;
+  height: number;
+}
+
+async function getImageDimensions(imagePath: string): Promise<ImageDimensions> {
   try {
     // 기본값 설정
     return { width: 640, height: 960 };
@@ -38,7 +50,7 @@ async function getImageDimensions(imagePath) {
   }
 }
 
-async function generateGalleryImages() {
+async function generateGalleryImages(): Promise<void> {
   try {
     console.log("갤러리 이미지 파일 스캔 시작...");
 
@@ -49,7 +61,7 @@ async function generateGalleryImages() {
       console.error(err);
 
       console.error(`갤러리 디렉토리가 존재하지 않습니다: ${GALLERY_DIR}`);
-      console.error(`디렉토리 public/images/gallery를 생성해주세요.`);
+      console.error("디렉토리 public/images/gallery를 생성해주세요.");
       process.exit(1);
     }
 
@@ -63,8 +75,8 @@ async function generateGalleryImages() {
       )
       .sort((a, b) => {
         // 숫자 기반 정렬 (001.webp, 002.webp 등의 순서를 보장)
-        const numA = parseInt(a.replace(/\D/g, "")) || 0;
-        const numB = parseInt(b.replace(/\D/g, "")) || 0;
+        const numA = Number.parseInt(a.replace(/\D/g, "")) || 0;
+        const numB = Number.parseInt(b.replace(/\D/g, "")) || 0;
         return numA - numB;
       });
 
@@ -76,8 +88,8 @@ async function generateGalleryImages() {
     console.log(`${imageFiles.length}개의 이미지 파일을 찾았습니다.`);
 
     // 이미지 임포트 코드와 배열 항목 생성
-    let importLines = [];
-    let galleryItems = [];
+    const importLines: string[] = [];
+    const galleryItems: string[] = [];
 
     for (let i = 0; i < imageFiles.length; i++) {
       const file = imageFiles[i];
@@ -121,4 +133,6 @@ export type GalleryImage = (typeof galleryImages)[number];
 // 메인 함수 실행
 generateGalleryImages();
 
-const { galleryImages } = require("../features/gallery/utils/gallery-images");
+// 이 부분은 CommonJS 방식의 require 문법이라 ES 모듈에서는 사용할 수 없습니다.
+// TypeScript에서는 아래와 같이 import 방식으로 변경해야 합니다.
+// import { galleryImages } from "../features/gallery/utils/gallery-images";

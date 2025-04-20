@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/generate-gallery-images.js",
+    "predev": "tsx scripts/generate-gallery-images.js",
     "dev": "next dev --turbopack",
-    "prebuild": "node scripts/generate-gallery-images.js",
+    "prebuild": "tsx scripts/generate-gallery-images.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "gen:image": "node scripts/generate-gallery-images.js"
+    "gen:images": "tsx scripts/generate-gallery-images.js"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
@@ -49,6 +49,7 @@
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   }
 }
