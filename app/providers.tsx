@@ -2,6 +2,7 @@
 "use client";
 
 // Since QueryClientProvider relies on useContext under the hood, we have to put 'use client' on top
+import { KakaoSDKProvider } from "@/features/shared/providers/KakaoSDKProvider";
 import {
   isServer,
   QueryCache,
@@ -51,6 +52,8 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   const queryClient = getQueryClient();
 
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <KakaoSDKProvider>{children}</KakaoSDKProvider>
+    </QueryClientProvider>
   );
 }
