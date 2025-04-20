@@ -1,9 +1,9 @@
 import data from "@/data.json";
 import { MailOpen } from "lucide-react";
-import SectionTitle from "../common/SectionTitle";
-import HostInfo from "../HostInfo";
-import SaveGoogleCalendarLink from "../SaveGoogleCalendarButton";
-import ScrollFadeIn from "../motion/ScrollFadeIn";
+import SectionTitle from "@/components/primitives/SectionTitle";
+import HostInfo from "@/features/invitation/components/HostInfo";
+import SaveGoogleCalendarButton from "@/features/invitation/components/SaveGoogleCalendarButton";
+import ScrollFadeIn from "@/components/motion/ScrollFadeIn";
 
 export default function InvitationSection() {
   const {
@@ -17,7 +17,7 @@ export default function InvitationSection() {
 
         <div className="space-y-8">
           <p className="whitespace-pre-line leading-loose">{message}</p>
-          <div className="whitespace-nowrap font-dodum font-bold">
+          <div className="font-dodum whitespace-nowrap font-bold">
             <HostInfo person={host.groom} />
             <HostInfo person={host.bride} />
           </div>
@@ -27,7 +27,7 @@ export default function InvitationSection() {
           {eventDetail}
         </p>
 
-        <SaveGoogleCalendarLink />
+        <SaveGoogleCalendarButton />
       </section>
     </ScrollFadeIn>
   );

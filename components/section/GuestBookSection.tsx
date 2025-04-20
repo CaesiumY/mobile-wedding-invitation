@@ -1,7 +1,7 @@
 import { NotebookPen } from "lucide-react";
-import SectionTitle from "../common/SectionTitle";
-import GuestCommentForm from "../GuestCommentForm";
-import GuestCommentList from "../GuestCommentList";
+import SectionTitle from "@/components/primitives/SectionTitle";
+import CommentForm from "@/features/guestBook/components/CommentForm";
+import CommentList from "@/features/guestBook/components/CommentList";
 import ScrollFadeIn from "../motion/ScrollFadeIn";
 
 const GuestBookSection = () => {
@@ -20,8 +20,8 @@ const GuestBookSection = () => {
           </p>
         </div>
 
-        <GuestCommentForm />
-        <GuestCommentList />
+        <CommentForm />
+        <CommentList />
       </section>
     </ScrollFadeIn>
   );

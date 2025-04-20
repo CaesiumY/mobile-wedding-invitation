@@ -1,4 +1,4 @@
-import { realtimeDB } from "@/lib/firebase/config";
+import { realtimeDB } from "@/lib/firebase/firebase";
 import { onValue, ref } from "firebase/database";
 import { useEffect, useState } from "react";
 

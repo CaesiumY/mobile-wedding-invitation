@@ -120,3 +120,5 @@ export type GalleryImage = (typeof galleryImages)[number];
 
 // 메인 함수 실행
 generateGalleryImages();
+
+const { galleryImages } = require("../features/gallery/utils/gallery-images");

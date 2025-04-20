@@ -1,6 +1,6 @@
 import React from "react";
-import SectionTitle from "../common/SectionTitle";
-import { Map } from "lucide-react";
+import SectionTitle from "@/components/primitives/SectionTitle";
+import { MapIcon } from "lucide-react";
 import data from "@/data.json";
 import { Button } from "../ui/button";
 import KakaoMap from "../KakaoMap";
@@ -12,8 +12,8 @@ const LocationSection = () => {
   return (
     <section className="mx-auto flex max-w-[400px] flex-col items-center gap-8">
       <ScrollFadeIn className="space-y-3">
-        <SectionTitle title="오시는 길" icon={<Map strokeWidth={3} />} />
-        <h3 className="whitespace-pre-line font-dodum font-bold text-primary">
+        <SectionTitle title="오시는 길" icon={<MapIcon strokeWidth={3} />} />
+        <h3 className="font-dodum text-primary whitespace-pre-line font-bold">
           {mapInfo.address1}
         </h3>
         <p className="whitespace-pre-line text-center font-extralight">
@@ -43,7 +43,7 @@ const LocationSection = () => {
       <ScrollFadeIn className="flex w-full flex-col items-start gap-5">
         {locationInfo?.map((item) => (
           <div key={item.title} className="space-y-1 text-left">
-            <h4 className="font-dodum text-lg font-bold text-primary">
+            <h4 className="font-dodum text-primary text-lg font-bold">
               {item.title}
             </h4>
             <p className="whitespace-pre-line font-extralight">{item.desc}</p>

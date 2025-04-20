@@ -4,7 +4,7 @@ import Image from "next/image";
 import FadeIn from "../motion/FadeIn";
 import ScrollFadeIn from "../motion/ScrollFadeIn";
 import PreventContext from "../layout/PreventContext";
-import DDayBadge from "../common/DDayBadge";
+import DDayBadge from "@/components/primitives/DDayBadge";
 
 const MainSection = () => {
   const {
@@ -29,7 +29,7 @@ const MainSection = () => {
       <ScrollFadeIn className="flex flex-col items-center gap-8">
         <div className="flex flex-col items-center gap-3">
           <DDayBadge />
-          <h1 className="whitespace-pre-line font-dodum text-4xl font-bold leading-tight text-[#2F2120]">
+          <h1 className="font-dodum whitespace-pre-line text-4xl font-bold leading-tight text-[#2F2120]">
             {title}
           </h1>
         </div>

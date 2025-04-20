@@ -1,7 +1,7 @@
 import { Images } from "lucide-react";
-import SectionTitle from "../common/SectionTitle";
+import SectionTitle from "@/components/primitives/SectionTitle";
 import OverlayHiddenBox from "../layout/OverlayHiddenBox";
-import PhotoGallery from "../PhotoGallery";
+import PhotoGallery from "@/features/gallery/components/PhotoGallery";
 
 const GallerySection = () => {
   return (

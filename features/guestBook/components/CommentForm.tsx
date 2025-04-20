@@ -1,14 +1,15 @@
 "use client";
 
 import { Loader2, Send } from "lucide-react";
-import React, { useId } from "react";
+import type React from "react";
+import { useId } from "react";
 import { toast } from "sonner";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
-import { useCreateCommentMutation } from "@/query/useCommentQuery";
-import { Checkbox } from "./ui/checkbox";
-import { Label } from "./ui/label";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { useCreateCommentMutation } from "@/features/guestBook/query/guestBookQuery"; // useAddComment -> useCreateCommentMutation
 
 const GuestCommentForm = () => {
   const guestCommentVisibilityId = useId();

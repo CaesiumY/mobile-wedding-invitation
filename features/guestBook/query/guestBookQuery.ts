@@ -1,3 +1,4 @@
+import { firestore } from "@/lib/firebase/firebase";
 import {
   useInfiniteQuery,
   useMutation,
@@ -11,11 +12,10 @@ import {
   limit,
   orderBy,
   query,
-  QueryDocumentSnapshot,
+  type QueryDocumentSnapshot,
   startAfter,
   where,
 } from "firebase/firestore";
-import { firestore } from "../lib/firebase/config";
 
 export interface Comment {
   name: string;

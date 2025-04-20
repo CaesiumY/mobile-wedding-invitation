@@ -1,10 +1,10 @@
 "use client";
 
-import useGoogleCalendar from "@/hooks/useGoogleCalendar";
 import React from "react";
-import { Button } from "./ui/button";
 import { Calendar } from "lucide-react";
 import data from "@/data.json";
+import useGoogleCalendar from "../hooks/useGoogleCalendar";
+import { Button } from "@/components/ui/button";
 
 const SaveGoogleCalendarLink = () => {
   const { addEventToGoogleCalendar } = useGoogleCalendar();

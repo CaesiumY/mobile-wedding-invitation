@@ -3,7 +3,7 @@ import data from "@/data.json";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { gangwonEduFont, gowunDodumFont } from "./font";
-import "./globals.css";
+import "@/styles/globals.css";
 import Providers from "./providers";
 import { PreloadResources } from "./preload-resources";
 
