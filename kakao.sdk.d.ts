@@ -1,6 +1,10 @@
+// Type definitions for Kakao JavaScript SDK
+// NOTE - 현재 작성된 타입 정의는 Kakao JavaScript SDK v2.7.5 기준의 임시 정의입니다.
+
 interface Window {
   Kakao: KakaoStatic;
 }
+
 export interface KakaoStatic {
   /** SDK version */
   VERSION: string;

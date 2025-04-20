@@ -1,5 +1,5 @@
 import LikeButton from "./LikeButton";
-import ShareButton from "./ShareButton";
+import ShareButton from "./share/ShareButton";
 import ScrollTopButton from "./ScrollTopButton";
 
 const FloatingBar = () => {
