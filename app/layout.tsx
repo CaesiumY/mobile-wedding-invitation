@@ -1,9 +1,9 @@
 import { Toaster } from "@/components/ui/sonner";
 import data from "@/data.json";
+import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { gangwonEduFont, gowunDodumFont } from "./font";
-import "@/styles/globals.css";
 import { PreloadResources } from "./preload-resources";
 import Providers from "./providers";
 
