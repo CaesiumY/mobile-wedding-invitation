@@ -4,9 +4,9 @@ import { Copy } from "lucide-react";
 import Image from "next/image";
 import kakaoPay from "@images/icons/kakaopay.png";
 import tossPay from "@images/icons/toss.png";
-import { Button } from "./ui/button";
 import { toast } from "sonner";
 import { isMobile } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 interface AccountItemProps {
   name: string;

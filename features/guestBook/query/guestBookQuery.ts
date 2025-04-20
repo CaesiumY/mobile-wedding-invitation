@@ -1,4 +1,4 @@
-import { firestore } from "@/lib/firebase/firebase";
+import { firestore } from "@/lib/firebase/firebase-config";
 import {
   useInfiniteQuery,
   useMutation,

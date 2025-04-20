@@ -1,10 +1,9 @@
-import React from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./ui/accordion";
+} from "../../../components/ui/accordion";
 
 interface AccountAccordianProps {
   title: string;
@@ -20,12 +19,12 @@ const AccountAccordian = ({ title, children }: AccountAccordianProps) => {
     >
       <AccordionItem
         value="item-1"
-        className="rounded-md border-none bg-secondary"
+        className="bg-secondary rounded-md border-none"
       >
         <AccordionTrigger className="font-dodum p-4 font-bold hover:no-underline">
           {title}
         </AccordionTrigger>
-        <AccordionContent className="rounded-b-md border border-t-0 border-secondary bg-white p-4 text-left">
+        <AccordionContent className="border-secondary rounded-b-md border border-t-0 bg-white p-4 text-left">
           {children}
         </AccordionContent>
       </AccordionItem>

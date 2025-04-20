@@ -1,14 +1,14 @@
 "use client";
 
+import AnimatedNumber from "@/components/primitives/AnimatedNumber";
+import { Button } from "@/components/ui/button";
 import data from "@/data.json";
-import { useRealtimeDB } from "@/hooks/useRealtimeDB";
-import { realtimeDB } from "@/lib/firebase/config";
+import { useRealtimeDB } from "@/features/guestBook/hooks/useGuestComments";
+import { realtimeDB } from "@/lib/firebase/firebase-config";
 import { increment, ref, update } from "firebase/database";
 import JSConfetti from "js-confetti";
 import { ArrowUp, Heart, Share } from "lucide-react";
 import { toast } from "sonner";
-import AnimatedNumber from "./common/AnimatedNumber";
-import { Button } from "./ui/button";
 
 const FloatingBar = () => {
   const { value: likesCount, isConnected } = useRealtimeDB("likes", 0);
@@ -18,7 +18,7 @@ const FloatingBar = () => {
     jsConfetti.addConfetti({ emojis });
 
     const updates: Record<string, ReturnType<typeof increment>> = {};
-    updates["likes"] = increment(1);
+    updates.likes = increment(1);
 
     await update(ref(realtimeDB), updates);
   };

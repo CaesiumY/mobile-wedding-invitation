@@ -2,7 +2,7 @@ import data from "@/data.json";
 import { Heart } from "lucide-react";
 import AccountItem from "@/features/account/components/AccountItem";
 import SectionTitle from "@/components/primitives/SectionTitle";
-import AccountAccordian from "@/components/AccountAccordian";
+import AccountAccordian from "@/features/account/components/AccountAccordian";
 import ScrollFadeIn from "@/components/motion/ScrollFadeIn";
 
 const AccountSection = () => {

@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { gangwonEduFont, gowunDodumFont } from "./font";
 import "@/styles/globals.css";
-import Providers from "./providers";
 import { PreloadResources } from "./preload-resources";
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: data.greeting.title,

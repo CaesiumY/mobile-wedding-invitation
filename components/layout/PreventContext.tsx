@@ -1,7 +1,7 @@
 "use client";
 
 import { usePreventContextMenu } from "@/hooks/usePreventContextMenu";
-import { HTMLAttributes, ReactNode } from "react";
+import type { HTMLAttributes, ReactNode } from "react";
 
 interface PreventContextProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;

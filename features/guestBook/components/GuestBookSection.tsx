@@ -2,7 +2,7 @@ import { NotebookPen } from "lucide-react";
 import SectionTitle from "@/components/primitives/SectionTitle";
 import CommentForm from "@/features/guestBook/components/CommentForm";
 import CommentList from "@/features/guestBook/components/CommentList";
-import ScrollFadeIn from "../motion/ScrollFadeIn";
+import ScrollFadeIn from "@/components/motion/ScrollFadeIn";
 
 const GuestBookSection = () => {
   return (
